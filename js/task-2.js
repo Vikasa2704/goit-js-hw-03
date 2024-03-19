@@ -1,4 +1,7 @@
 function makeArray(firstArray, secondArray, maxLength) {
+  if (maxLength <= 0) {
+    return [];
+  }
   const allArray = [...firstArray, ...secondArray];
   return allArray.slice(0, maxLength);
 }

@@ -1,10 +1,11 @@
 function filterArray(numbers, value) {
-  let newNambers = [];
-  for (let i = 0; i < numbers.length; i++)
+  let newNumbers = [];
+  for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] > value) {
-      newNambers.push(numbers[i]);
+      newNumbers.push(numbers[i]);
     }
-  return newNambers;
+  }
+  return newNumbers;
 }
 
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
